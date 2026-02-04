@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THE SIGNAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="analog-overlay"></div>
+
+<header>
+  <h1>THE SIGNAL</h1>
+  <div id="stats">
+    ❤️ <span id="health">100</span>
+    🧠 <span id="sanity">100</span>
+  </div>
+</header>
+
+<div id="map">
+  <button onclick="goLocation('forest')">Forest</button>
+  <button onclick="goLocation('hospital')">Hospital</button>
+  <button onclick="goLocation('tower')">Radio Tower</button>
+</div>
+
+<main>
+  <img id="scene-image" src="images/forest.jpg">
+  <p id="story"></p>
+  <div id="choices"></div>
+</main>
+
+<footer>
+  <p>Inventory: <span id="inventory"></span></p>
+</footer>
+
+<audio id="clickSound" src="audio/click.mp3"></audio>
+<audio id="heartbeat" src="audio/heartbeat.mp3" loop></audio>
+<audio id="whisper1" src="audio/whisper1.mp3"></audio>
+<audio id="whisper2" src="audio/whisper2.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
