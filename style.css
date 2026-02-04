@@ -1,0 +1,61 @@
+body {
+  background: black;
+  color: #ddd;
+  font-family: monospace;
+  margin: 0;
+}
+
+header {
+  padding: 10px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+}
+
+#map button {
+  background: #222;
+  color: #aaa;
+  border: 1px solid #444;
+  margin: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+#scene-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+button.choice {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background: #111;
+  color: #ccc;
+  border: 1px solid #555;
+}
+
+#analog-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: url("images/static.gif");
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+
+.low-sanity {
+  animation: glitch 0.2s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  25% { transform: translate(2px, -2px); }
+  50% { transform: translate(-2px, 2px); }
+  75% { transform: translate(2px, 2px); }
+}
